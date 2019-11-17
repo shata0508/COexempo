@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet" href="./style1.css">
+
+</head>
+<body>
+ 
+ <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">CO</span>exmpo</h1>
+        </div>
+        <nav>
+          
+            <a href="./login.html" style="width:auto">Login</a>
+			&nbsp;
+	<a href= "./Signup.html" style="width:auto;">Sign Up</a>
+        
+        </nav>
+      </div>
+    </header>
+
+<section id="showcase">
+      <div class="container">
+        <h1>Online AI based exam System</h1>
+		
+        <p>Giving exams is easy and its fully online based. Exam is AI based and its fully depend on weightage.</p>
+      </div>
+    </section>
+<section id="showcase2">
+	<div class="container">
+		<h2>Course Wise Exam <img src="./images/exam.jpg" align="right"class="imgcontainer"></h2>
+		<p>Exams will be on individual courses.Video lectures or information about the part where your weakness.</p>
+	</div>
+</section>
+
+<footer>
+      <p>Coexmpo group</p>
+    </footer>
+	<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+    document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+    document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+</script>
+
+</body>
+</html>
