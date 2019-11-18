@@ -92,7 +92,7 @@ ul{
 /* Showcase */
 #showcase{
   min-height:425px;
-  background:url('../project/images/showcase.jpg') no-repeat 0 -400px;
+  background:url('./images/showcase.jpg') no-repeat 0 -400px;
   text-align:center;
   color:#ffffff;
 }
@@ -219,11 +219,11 @@ li:hover {
 
 /* Center the image and position the close button */
 .imgcontainer {
-    align: right;
+    align: center;
 	width: 20%;
 	hieght:50%;
     margin: 24px 0 12px 0;
-    position: center;
+    position: right;
 }
 
 img.avatar {
