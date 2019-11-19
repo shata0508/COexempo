@@ -1,3 +1,5 @@
+@import url('https://www.w3schools.com/w3css/4/w3.css');
+
 body{
   font: 15px/1.5 Arial, Helvetica,sans-serif;
   padding:0;
@@ -150,35 +152,6 @@ ul{
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
 /* Full-width input fields */
 input[type=text1], input[type=password] {
     width: 80%;
@@ -219,11 +192,11 @@ li:hover {
 
 /* Center the image and position the close button */
 .imgcontainer {
-    align: center;
+    align: right;
 	width: 20%;
 	hieght:50%;
     margin: 24px 0 12px 0;
-    position: right;
+    position: center;
 }
 
 img.avatar {
@@ -314,8 +287,8 @@ input[type=text]:focus
     width: 80%;
 } 
 footer{
-  padding:1px;
-  margin-top:1px;
+  padding:0.1px;
+  margin-top:0.4px;
   color:#ffffff;
   background-color:#e8491d;
   text-align: center;

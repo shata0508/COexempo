@@ -64,8 +64,8 @@ h6 {
 
 fieldset {
     border: 2px solid #c0c0c0;
-    margin: 0 5px;
-    padding: .45em .725em .95em;
+    margin: 6 10px;
+    padding: 1em 6em 0.5em;
 }
 
 #signin label {
